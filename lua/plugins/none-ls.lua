@@ -4,7 +4,6 @@
 ---@type LazySpec
 return {
   "nvimtools/none-ls.nvim",
-  dependencies = { "nvimtools/none-ls-extras.nvim" },
   opts = function(_, opts)
     local null_ls = require "null-ls"
 
@@ -30,10 +29,7 @@ return {
       },
 
       -- ── Diagnostics ─────────────────────────────────────────────────────
-      -- eslint_d: daemon version of ESLint (significantly faster than eslint LSP)
-      require("none-ls.diagnostics.eslint_d").with {
-        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-      },
+      -- ESLint diagnostics handled by the eslint LSP (vscode-eslint-language-server)
 
       -- stylelint: CSS / SCSS / Less linter
       null_ls.builtins.diagnostics.stylelint.with {
@@ -41,10 +37,7 @@ return {
       },
 
       -- ── Code Actions ────────────────────────────────────────────────────
-      -- eslint_d code actions (auto-fix, disable-rule comments, etc.)
-      require("none-ls.code_actions.eslint_d").with {
-        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-      },
+      -- ESLint code actions handled by the eslint LSP (vscode-eslint-language-server)
     })
   end,
 }

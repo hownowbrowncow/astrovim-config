@@ -17,7 +17,7 @@ return {
         "prettierd",  -- Fast Prettier daemon (JS/TS/CSS/HTML/JSON/YAML/MD)
 
         -- ── Linters ───────────────────────────────────────────────────────
-        "eslint_d",   -- Fast ESLint daemon (JS/TS/JSX/TSX)
+        "eslint-lsp", -- ESLint LSP (supports ESLint 10 + flat config)
         "stylelint",  -- CSS / SCSS / Less linter
 
         -- ── Debuggers ─────────────────────────────────────────────────────

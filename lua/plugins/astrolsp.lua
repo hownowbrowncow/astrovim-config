@@ -18,8 +18,8 @@ return {
         enabled = true, -- format on save globally
       },
       -- Disable LSP-based formatting for servers where we use prettierd instead.
-      -- This avoids a conflict between vtsls and prettierd both trying to format.
-      disabled = { "vtsls" },
+      -- This avoids a conflict between vtsls/eslint and prettierd both trying to format.
+      disabled = { "vtsls", "eslint" },
       timeout_ms = 2000,
     },
     -- Enable servers already installed outside of Mason
