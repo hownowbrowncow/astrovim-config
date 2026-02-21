@@ -33,6 +33,7 @@
   "neogit": { "branch": "master", "commit": "2a47e1df95605b232fbdd5d369ab1bfaaf40fce4" },
   "neotest": { "branch": "master", "commit": "deadfb1af5ce458742671ad3a013acb9a6b41178" },
   "neotest-jest": { "branch": "main", "commit": "3f0cc2cff1ee05394081805c622dc2551b54d8c4" },
+  "neotest-vitest": { "branch": "main", "commit": "f01addc6f07b79ef1be5f4297eafbee9e0959018" },
   "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
   "none-ls-extras.nvim": { "branch": "main", "commit": "ca22d81c34410bd3759bc95a8206d5d3c300e12a" },
   "none-ls.nvim": { "branch": "main", "commit": "3c206dfedf5f1385e9d29f85ffaec7874358592a" },
