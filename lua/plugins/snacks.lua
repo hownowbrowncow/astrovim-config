@@ -10,14 +10,6 @@ return {
           filename_first = true, -- show filename before directory path
         },
       },
-      sources = {
-        files = {
-          preview = false, -- no code preview when searching files by name
-        },
-        smart = {
-          preview = false, -- same for smart finder (buffers/recent/files)
-        },
-      },
     },
   },
 }
