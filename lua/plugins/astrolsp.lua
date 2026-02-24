@@ -31,6 +31,17 @@ return {
     handlers = {},
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
+      eslint_fix_on_save = {
+        cond = "textDocument/codeAction",
+        {
+          event = "BufWritePre",
+          desc = "Fix all ESLint errors on save",
+          callback = function(args)
+            local clients = vim.lsp.get_clients { bufnr = args.buf, name = "eslint" }
+            if #clients > 0 then vim.cmd "EslintFixAll" end
+          end,
+        },
+      },
       lsp_codelens_refresh = {
         cond = "textDocument/codeLens",
         {
