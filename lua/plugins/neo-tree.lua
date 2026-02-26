@@ -10,5 +10,14 @@ return {
         handler = function() require("neo-tree.command").execute { action = "close" } end,
       },
     },
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+      },
+    },
+    window = {
+      position = "float",
+      width = 50,
+    },
   },
 }
